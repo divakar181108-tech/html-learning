@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+}
+h1{
+    background-color: cadetblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+.task1 :hover {
+    background-color: beige;
+    cursor: pointer;
+}
+.i {
+    font-size: large;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 1000px;
+    height: 30px;
+    background-color:bisque;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.o {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 30px;
+    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.p {
+    font-size: large;
+     display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 30px;
+    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 20px;
+    margin-top: 30px;
+}

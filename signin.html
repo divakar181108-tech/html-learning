@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | DSRTravels</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body class="signin-page">
+
+    <div class="signin-container">
+        <a href="Task 3.html" class="logo"><span>DSR</span>&nbsp;Travels</a>
+
+        <p class="section-tag">WELCOME BACK, TRAVELER</p>
+        <h1>Sign In</h1>
+        <p class="signin-subtitle">
+            Sign in to continue your next adventure.
+        </p>
+
+        <form action="#" method="get" class="signin-form"
+              onsubmit="return showMessage(event)">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your password" minlength="6"
+                   required>
+
+            <button type="submit" class="signin-submit">
+                Sign In →
+            </button>
+
+            <p id="signin-message" class="signin-message"
+               role="status"></p>
+        </form>
+
+        <p class="back-home">
+            Want to explore first?
+            <a href="Task 3.html">Back to Home</a>
+        </p>
+    </div>
+
+</body>
+</html>

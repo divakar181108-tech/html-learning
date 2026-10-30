@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodie Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf0;
+        }
+
+        header {
+            background: #202020;
+            color: white;
+            padding: 25px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: orange;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        .hero {
+            height: 450px;
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ),
+            url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            animation: appear 2s;
+        }
+
+        .hero p {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            background: orange;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .menu {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .menu h2 {
+            font-size: 35px;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        .food-card {
+            display: inline-block;
+            width: 250px;
+            background: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ccc;
+            transition: 0.4s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-12px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .food-card h3 {
+            margin: 15px;
+        }
+
+        .food-card p {
+            color: #777;
+        }
+
+        .price {
+            color: orangered;
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        footer {
+            background: #202020;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            .food-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FOODIE HUB</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Delicious Food For You</h2>
+
+        <p>Fresh ingredients. Amazing taste. Happy moments.</p>
+
+        <button>Explore Menu</button>
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h2>Our Special Menu</h2>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
+
+            <h3>Cheese Burger</h3>
+
+            <p>Delicious cheesy burger</p>
+
+            <div class="price">₹149</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
+
+            <h3>Italian Pizza</h3>
+
+            <p>Fresh and tasty pizza</p>
+
+            <div class="price">₹249</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500">
+
+            <h3>Fresh Salad</h3>
+
+            <p>Healthy green salad</p>
+
+            <div class="price">₹99</div>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <h3>FOODIE HUB</h3>
+        <p>Contact: foodie@example.com</p>
+        <p>© 2026 Foodie Hub</p>
+    </footer>
+
+</body>
+</html>

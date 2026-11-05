@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SneakerX - Shoe Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #101010;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #080808;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    color: #ff5722;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #151515, #292929);
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #ff5722;
+}
+
+.hero p {
+    color: #aaa;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5722;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff5722;
+    transform: scale(1.08);
+}
+
+.shoe {
+    font-size: 180px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-10deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* PRODUCTS */
+.products {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.products h2 span {
+    color: #ff5722;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 30px 20px;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px #ff572244;
+}
+
+.card .image {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #ff5722;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.card button {
+    background: #ff5722;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card button:hover {
+    background: white;
+    color: #ff5722;
+}
+
+/* FOOTER */
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    nav ul {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .shoe {
+        font-size: 120px;
+        margin-top: 30px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SNEAKERX.</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>STEP INTO <span>STYLE.</span></h1>
+
+        <p>
+            Discover the latest sneaker collection.
+            Comfort, fashion and performance
+            combined in one perfect shoe.
+        </p>
+
+        <a href="#products" class="btn">SHOP NOW →</a>
+    </div>
+
+    <div class="shoe">👟</div>
+</section>
+
+<section class="products" id="products">
+
+    <h2>OUR <span>COLLECTION</span></h2>
+
+    <div class="product-container">
+
+        <div class="card">
+            <div class="image">👟</div>
+            <h3>Air Runner</h3>
+            <p>Premium Running Shoes</p>
+            <div class="price">₹2,499</div>
+            <button>BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="image">👞</div>
+            <h3>Street Pro</h3>
+            <p>Urban Casual Sneakers</p>
+            <div class="price">₹3,499</div>
+            <button>BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="image">🥾</div>
+            <h3>Urban Flex</h3>
+            <p>Premium Sports Shoes</p>
+            <div class="price">₹2,999</div>
+            <button>BUY NOW</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 SNEAKERX. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
